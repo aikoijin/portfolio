@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "DIN-Next-W01-Light";
+    src: url("https://db.onlinewebfonts.com/t/643121b5d2cc9943eff9b59054cc29ba.eot");
+    src: url("https://db.onlinewebfonts.com/t/643121b5d2cc9943eff9b59054cc29ba.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/643121b5d2cc9943eff9b59054cc29ba.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/643121b5d2cc9943eff9b59054cc29ba.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/643121b5d2cc9943eff9b59054cc29ba.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/643121b5d2cc9943eff9b59054cc29ba.svg#DIN Next Rounded LT W01 Light")format("svg");
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Proxima-N-W01-Reg";
+    src: url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.eot");
+    src: url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.svg#Proxima N W01 Reg")format("svg");
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Brandon-Grot-W01-Light";
+    src: url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot");
+    src: url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#Brandon Grot W01 Light")format("svg");
+    font-display: block;
+}

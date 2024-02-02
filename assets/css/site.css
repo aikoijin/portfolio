@@ -30,3 +30,54 @@
     url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#Brandon Grot W01 Light")format("svg");
     font-display: block;
 }
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Proxima-N-W01-Reg";
+    color: #343434;
+}
+
+p{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Proxima-N-W01-Reg";
+    margin: 4px;
+}
+
+a:hover {
+    color: #d42929;
+}
+
+#email:hover {
+    color:#343434;
+}
+
+.header{
+    text-align: right;
+    position: relative;
+    padding-top: 45px;
+    padding-right: 285px;
+}
+
+#navbar {
+    display:inline;
+    margin: 70px;
+    text-align: center;      
+}
+
+#navbar_links li{
+    display: inline;
+    padding: 48px;
+    align-items: center;
+}
+
+#navbar_links a{
+    font-size: 14px;
+    color: #848484;
+
+}

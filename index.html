@@ -15,7 +15,6 @@
 	<!-- This title is used for tabs and bookmarks -->
 	<title>Michelle Wang | Concept Art</title>
   	<link rel="canonical" href="https://aikoijin.github.io/portfolio/"/>
-
 	<!--The meta elements of this document describe the document and its keywords.-->
   	<meta property="og:title" content="Michelle Wang | Concept Art"/>
   	<meta property="og:image" content="link"/>
@@ -24,6 +23,7 @@
   	<meta property="og:url" content="https://aikoijin.github.io/portfolio/"/>
   	<meta property="og:site_name" content="Aikoijin Portfolio"/>
   	<meta property="og:type" content="website"/>
+	<!-- <script src="assets/js/script.js"></script> -->
 </head>
 
 <body class ="wallpaper">
@@ -92,6 +92,9 @@
 					<div class = "slide">
 						<img src = "assets/images/Shabti/9.png" alt ="">
 					</div>
+					<div class = "slide">
+						<img src = "assets/images/Shabti/10.png" alt ="">
+					</div>
 
 					<div class = "navigation">
 						<i class="fas fa-chevron-left prev-btn"><</i>
@@ -100,6 +103,7 @@
 
 					<div class = "navigation-visibility">
 						<div class = "slide-icon active"></div>
+						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
@@ -201,31 +205,19 @@
 			<div class = "grid-item">
 				<div class = "slider">
 					<div class = "slide active">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/9Tales/1.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/9Tales/2.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/9Tales/3.gif" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/9Tales/4.gif" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
-					</div>
-					<div class = "slide">
-						<img src = "assets/images/" alt ="">
-					</div>
-					<div class = "slide">
-						<img src = "assets/images/" alt ="">
-					</div>
-					<div class = "slide">
-						<img src = "assets/images/" alt ="">
-					</div>
-					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/9Tales/5.png" alt ="">
 					</div>
 
 					<div class = "navigation">
@@ -235,10 +227,6 @@
 
 					<div class = "navigation-visibility">
 						<div class = "slide-icon active"></div>
-						<div class = "slide-icon"></div>
-						<div class = "slide-icon"></div>
-						<div class = "slide-icon"></div>
-						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
@@ -266,31 +254,34 @@
 			<div class = "grid-item">
 				<div class = "slider">
 					<div class = "slide active">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/1.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/2.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/3.jpg" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/4.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/5.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/6.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/7.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/8.png" alt ="">
 					</div>
 					<div class = "slide">
-						<img src = "assets/images/" alt ="">
+						<img src = "assets/images/LOL/9.png" alt ="">
+					</div>
+					<div class = "slide">
+						<img src = "assets/images/LOL/10.png" alt ="">
 					</div>
 
 					<div class = "navigation">
@@ -308,91 +299,67 @@
 						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
 						<div class = "slide-icon"></div>
+						<div class = "slide-icon"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-				<script type = "text/javascript">
-					const slider = document.querySelector(".slider");
-					const nextBtn = document.querySelector(".next-btn");
-					const prevBtn = document.querySelector(".prev-btn");
-					const slides = document.querySelectorAll(".slide");
-					const slideIcons = document.querySelectorAll(".slide-icon");
-					const numberOfSlides = slides.length;
-					var slideNumber = 0;
-
-					//image slider next button
-					nextBtn.addEventListener("click", () => {
-						slides.forEach((slide) => {
-							slide.classList.remove("active");
-						});
-						slideIcons.forEach((slideIcon) => {
-							slideIcon.classList.remove("active");
-						});
-					
-						slideNumber++;
-
-						if(slideNumber > (numberOfSlides -1)){
-						slideNumber = 0;
-						}
-
-						slides[slideNumber].classList.add("active");
-						slideIcons[slideNumber].classList.add("active");
-					});
-
-					//image slider previous button
-					prevBtn.addEventListener("click", () => {
-						slides.forEach((slide) => {
-							slide.classList.remove("active");
-						});
-						slideIcons.forEach((slideIcon) => {
-							slideIcon.classList.remove("active");
-						});
-					
-						slideNumber--;
-
-						if(slideNumber < 0){
-							slideNumber = numberOfSlides - 1;
-						}
-
-						slides[slideNumber].classList.add("active");
-						slideIcons[slideNumber].classList.add("active");
-					});
-
-					//image slider autoplay
-					var playSlider;
-					
-					var repeater = () => {
-						playSlider = setInterval(function(){
-							slides.forEach((slide) => {
-								slide.classList.remove("active");
-							});
-							slideIcons.forEach((slideIcon) => {
-								slideIcon.classList.remove("active");
-							});
-
-							slideNumber++;
-
-							if (slideNumber > (numberOfSlides -1)){
-								slideNumber = 0
-							}
-
-							slides[slideNumber].classList.add("active");
-							slideIcons[slideNumber].classList.add("active");
-						}, 3000);
-					}
-					repeater();
-
-					//stop the image slider autoplay on mouseover
-					slider.addEventListener("mouseover", () => {
-						clearInterval(playSlider);
-					});
-
-					//start the image slider sutoplay again on mouseout
-					slider.addEventListener("mouseout", () => {
-						repeater();
-					});
-				</script>
+		<script type="text/javascript">
+			class Gallery {
+			  constructor(slider) {
+				this.slider = slider;
+				this.nextBtn = slider.querySelector(".next-btn");
+				this.prevBtn = slider.querySelector(".prev-btn");
+				this.slides = slider.querySelectorAll(".slide");
+				this.slideIcons = slider.querySelectorAll(".slide-icon");
+				this.numberOfSlides = this.slides.length;
+				this.slideNumber = 0;
+				this.playSlider = null;
+		
+				this.nextBtn.addEventListener("click", this.nextSlide.bind(this));
+				this.prevBtn.addEventListener("click", this.prevSlide.bind(this));
+		
+				this.repeater();
+				this.slider.addEventListener("mouseover", this.stopSlider.bind(this));
+				this.slider.addEventListener("mouseout", this.repeater.bind(this));
+			  }
+		
+			  nextSlide() {
+				this.showSlide(this.slideNumber + 1);
+			  }
+		
+			  prevSlide() {
+				this.showSlide(this.slideNumber - 1);
+			  }
+		
+			  showSlide(index) {
+				this.slides.forEach((slide) => {
+				  slide.classList.remove("active");
+				});
+		
+				this.slideIcons.forEach((slideIcon) => {
+				  slideIcon.classList.remove("active");
+				});
+		
+				this.slideNumber = (index + this.numberOfSlides) % this.numberOfSlides;
+		
+				this.slides[this.slideNumber].classList.add("active");
+				this.slideIcons[this.slideNumber].classList.add("active");
+			  }
+		
+			  repeater() {
+				this.playSlider = setInterval(this.nextSlide.bind(this), 3000);
+			  }
+		
+			  stopSlider() {
+				clearInterval(this.playSlider);
+			  }
+			}
+		
+			// Initialize multiple galleries
+			const galleries = document.querySelectorAll(".slider");
+			galleries.forEach((slider) => new Gallery(slider));
+		  </script>
 	</main>
 
 	<div class = "spaceblock"></div>

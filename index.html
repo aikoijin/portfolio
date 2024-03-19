@@ -10,6 +10,8 @@
 	<link rel="apple-touch-icon" type="image/png"  href="assets/images/icon2.png" />
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" type="text/css" href="assets/css/site.css">
+	<!-- Include a page specific CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="assets/css/concept.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered deleted from template: type="text/javascript" -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" intergrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<!-- This title is used for tabs and bookmarks -->
@@ -23,7 +25,7 @@
   	<meta property="og:url" content="https://aikoijin.github.io/portfolio/"/>
   	<meta property="og:site_name" content="Aikoijin Portfolio"/>
   	<meta property="og:type" content="website"/>
-	<!-- <script src="assets/js/script.js"></script> -->
+	<script src="assets/js/script.js"></script>
 </head>
 
 <body class ="wallpaper">
@@ -33,25 +35,35 @@
 			<div><a href="about.html" style="font-size: 35px; text-align: right;"><span>M I C H E L L E . W A N G</span></a></div>
 			<div><p>Illustrator&nbsp; &&nbsp; Concept Artist</p></div>
 			<div><a  id= "email" href="mailto:michellewang3352@gmail.com" style="text-align: right; ">michellewang3352@gmail.com</a></div>
-			</div>
+		</div>
 	
-			<div id = "navbar">
+		<div id = "navbar">
 			<ul id = "navbar_links">
-			<li><a href="index.html" target="_self">CONCEPT ART</a></li>
-			<li><a href="illustration.html" target="_self">ILLUSTRATION</a></li>
-			<li><a href="animation.html" target="_self">ANIMATIONS</a></li>
-			<li><a href="3dmodeling.html" target="_self">3D MODELING</a></li>
-			<li><a href="about.html" target="_self">ABOUT</a></li>
+			<li><a href="index.html" class = "active">CONCEPT ART</a></li>
+			<li><a href="illustration.html">ILLUSTRATION</a></li>
+			<li><a href="animation.html">ANIMATIONS</a></li>
+			<li><a href="3dmodeling.html">3D MODELING</a></li>
+			<li><a href="about.html">ABOUT</a></li>
 			</ul>
 		</div>	
 	</header>
 
 	<main id="content" >
+		<div class = "spaceblock2"></div>
+		<div id = "anchors">
+			<ul>
+				<li><a href="#Godslayers"><i>Godslayers</i></a></li>
+				<li><a href="#Shabti"><i>Shabti</i></a></li>
+				<li><a href="#Starstruck"><i>Starstruck</i></a></li>
+				<li><a href="#9Tales"><i>9-Tales</i></a></li>
+				<li><a href="#League"><i>League of Legends</i></a></li>
+			</ul>
+		</div>
+
 		<!-- GODSLAYERS -->
-		<div class = "grid-container">
+		<section><div class = "grid-container">
 			<div class = "grid-item">
-				<h1 class = "gamenames" style = "font-size: 35px; margin:0px;">Godslayers</h1>
-				<p style = "font-size: 13px;">Jan 2023 - Present</p>
+				<a id = "Godslayers"><h1 class = "gamenames" style = "font-size: 35px; margin:0px;">Godslayers</h1></a>				<p style = "font-size: 13px;">Jan 2023 - Present</p>
 				<p style = "font-size: 13px; margin-bottom:15px;">Co-Producer | Art Director | UI/UX | 2D Animator | Game Developer
 				</p>
 		
@@ -59,9 +71,9 @@
 					<br><br>The player controls the party and their actions as they fight. Learn how the boss reacts to them, and how they should react to the boss. With each phase of the boss fight, more information is revealed, the player gains access to more abilities, and both the party and the boss grow stronger.				
 				</p>
 				<br><hr style = "margin: 0px; margin-bottom: 20px;">
-				<a href = "https://henrybarrick.itch.io/godslayers-milestone-playtests" style = "text-decoration: underline;font-weight: bold;">Play Godslayers on Itch.io >></a>
-			</div>
-			<div class = "grid-item">
+				<a href = "https://henrybarrick.itch.io/godslayers-milestone-playtests" style = "text-decoration: underline;font-weight: bold;" target="_blank">Play Godslayers on Itch.io >></a>
+			</div>	
+			<!-- <div class = "grid-item">	 -->
 				<div class = "slider">
 					<div class = "slide active">
 						<img src = "assets/images/Godslayers/Title Screen.png" alt ="">
@@ -104,15 +116,15 @@
 						<div class = "slide-icon"></div>
 					</div>
 				</div>
-			</div>
-		</div>
+			<!-- </div> -->
+		</div></section>
 
 		<div class = "spaceblock"></div>
 
 		<!-- SHABTI -->
-		<div class = "grid-container">
+		<section><div class = "grid-container">
 			<div class = "grid-item">
-				<h1 class = "gamenames" style = "font-size: 35px; margin:0px;">Shabti</h1>
+				<a id= "Shabti"><h1 class = "gamenames" style = "font-size: 35px; margin-bottom:0px;">Shabti</h1></a>
 				<p style = "font-size: 13px;">December 2023</p>
 				<p style = "font-size: 13px; margin-bottom:15px;">Concept Artist | Texture Artist | 2D Artist | UX/UI | Logo Design</p>
 
@@ -122,7 +134,7 @@
 				As the mummy explores the pyramid's depths, it encounters various foes with distinct behaviors and strategies to impede its progress. Some creatures may lurk in the shadows, waiting for the opportune moment to strike, while others may patrol predetermined routes, forcing the player to carefully time their movements to avoid detection. Meanwhile, the mummy must utilize its wits to solve intricate puzzles scattered throughout the pyramid, each puzzle unlocking a new passage or revealing vital clues to aid in its escape. With tension mounting with each passing moment, players must balance stealth, strategy, and problem-solving skills to overcome the myriad challenges and ultimately unravel the mystery behind their entombment.
 				</p>
 				<br><hr style = "margin: 0px; margin-bottom: 20px;">
-				<a href = "https://jodortiz.itch.io/shabti" style = "text-decoration: underline;font-weight: bold;">Play Shabti on Itch.io >></a>
+				<a href = "https://jodortiz.itch.io/shabti" style = "text-decoration: underline;font-weight: bold;" target="_blank">Play Shabti on Itch.io >></a>
 			</div>
 			<div class = "grid-item">
 				<div class = "slider">
@@ -177,14 +189,14 @@
 				</div>
 			</div>
 		</div>
-		</div>
+		</div></section>
 
 		<div class = "spaceblock"></div>
 
 		<!-- STARSTRUCK -->
 		<div class = "grid-container">
 			<div class = "grid-item">
-				<h1 class = "gamenames" style = "font-size: 35px; margin:0px;">Starstruck</h1>
+				<a id = "Starstruck"><h1 class = "gamenames" style = "font-size: 35px; margin:0px;">Starstruck</h1></a>
 				<p style = "font-size: 13px;">November 2023</p>
 				<p style = "font-size: 13px; margin-bottom:15px;">Concept Artist | Level Design Artist (3rd) | 2D Artist | Cinematics for Start/Ending Scenes
 				</p>
@@ -192,7 +204,7 @@
 				<p>Embark on an interstellar odyssey in Starstruck, a visually stunning 2D platformer where players traverse diverse realms within the universe to retrieve the scattered fragments of the vital Polaris star. As each character's distinct design influences the aesthetic of their world, prepare for a challenging journey filled with visually captivating landscapes and hair-raising obstacles, reminiscent of the unforgiving difficulty found in indie classics like the "World's Hardest Game."			
 			</p>
 				<br><hr style = "margin: 0px; margin-bottom: 20px;">
-				<a href = "https://coldsteel503.itch.io/starstruck" style = "text-decoration: underline;font-weight: bold;">Play Starstruck on Itch.io >></a>
+				<a href = "https://coldsteel503.itch.io/starstruck" style = "text-decoration: underline;font-weight: bold;" target="_blank">Play Starstruck on Itch.io >></a>
 			</div>
 			<div class = "grid-item">
 				<div class = "slider">
@@ -249,7 +261,7 @@
 		<!-- 9-TALES -->
 		<div class = "grid-container">
 			<div class = "grid-item">
-				<h1 class = "gamenames" style = "font-size: 35px; margin:0px;">9-Tales</h1>
+				<a id ="9Tales"><h1 class = "gamenames" style = "font-size: 35px; margin:0px;">9-Tales</h1></a>
 				<p style = "font-size: 13px;">October 2023</p>
 				<p style = "font-size: 13px; margin-bottom:15px;">Concept Artist | Level Design Artist | 2D Artist | UI/UX | Sprite Artist | Game Developer
 				</p>
@@ -257,7 +269,7 @@
 				<p>In "9-Tales," part of an anthology of games, players take on the role of Yuki, a kemonomimi, navigating through a perilous 2D platformer, inspired by Yoko Ono’s Grapefruit, BEAT PIECE, evoking the feeling of a racing heartbeat through clunky mechanics and moving platforms. As the player maneuvers through tunnels with logs and over large bodies of water, they experience the tension of nine lives at stake, with relief flooding in upon reaching the victory screen.
 				</p>				
 				<br><hr style = "margin: 0px; margin-bottom: 20px;">
-				<a href = "https://aikoijin.itch.io/9-tales" style = "text-decoration: underline;font-weight: bold;">Play 9-Tales on Itch.io >></a>
+				<a href = "https://aikoijin.itch.io/9-tales" style = "text-decoration: underline;font-weight: bold;" target="_blank">Play 9-Tales on Itch.io >></a>
 			</div>
 			<div class = "grid-item">
 				<div class = "slider">
@@ -298,7 +310,7 @@
 		<!-- LEAGUE OF LEGENDS -->
 		<div class = "grid-container">
 			<div class = "grid-item">
-				<h1 class = "gamenames" style = "font-size: 35px; margin:0px;">League of Legends</h1>
+				<a id = "League"><h1 class = "gamenames" style = "font-size: 35px; margin:0px;">League of Legends</h1></a>
 				<p style = "font-size: 13px;">est. 2021</p>
 				<p style = "font-size: 13px; margin-bottom:15px;">Concept Artist | Fanmade Art | 2D Artist | 3D Modeling
 				</p>
@@ -306,7 +318,7 @@
 				<p>My favorite game is League of Legends as I have been an avid player of the game since 2016. I really love how there are a variety of champions that you can choose from and play since it doesn’t limit you to one choice and allows you to find the champion that suits your skill level and playstyle. I also love Riot’s semi-realism style and immaculate character development with each skinline referencing multiple cultural days and apparel. For example, Heavenscale is based on 2024: Year of the Dragon, La Illusion is based on Day of the Dead, Lunar New Year is based on Chinese New Year, Heartbreakers/Sweetheart is based on Valentine’s Day, Immortal Journey is based on xianxias/immortal heroes in Chinese fantasy,etc. By incorporating multiple skinlines based on different cultures, players feel a sense of belonging when they see their traditions being represented in skinlines for champions that they can play and associate themselves with.
 				</p>
 				<br><hr style = "margin: 0px; margin-bottom: 20px;">
-				<a href = "https://www.instagram.com/aikoijin/" style = "text-decoration: underline;font-weight: bold;">Check out my Instagram for more >></a>
+				<a href = "https://www.instagram.com/aikoijin/" style = "text-decoration: underline;font-weight: bold;" target="_blank">Check out my Instagram for more >></a>
 			</div>
 			<div class = "grid-item">
 				<div class = "slider">
@@ -417,9 +429,10 @@
 			const galleries = document.querySelectorAll(".slider");
 			galleries.forEach((slider) => new Gallery(slider));
 		  </script>
+		<a href = "#Top" id = "btt"><button><img src="assets/images/BacktoTopIcon.png"></button></a>
 	</main>
 
-	<div class = "spaceblock"></div>
+	<div class = "spaceblock2"></div>
 	
 	<footer>
 		<hr>

@@ -1,0 +1,78 @@
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#btt img{
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+}
+
+/* Style the images */
+.row img {
+    width: 100%; /* Adjust the width as necessary */
+    transition: transform 0.2s; /* Smooth transformation */
+    margin-bottom: -4px; /* Remove space between images */
+}
+
+/* Full-size image styling */
+.full-size {
+    position: fixed; /* Overlay on the page */
+    z-index: 1000; /* Ensure it's on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    cursor: pointer; /* Change cursor to indicate it can be closed */
+}
+
+
+#content{
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

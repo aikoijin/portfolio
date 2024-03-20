@@ -29,7 +29,7 @@
 	<script src="assets/js/script.js"></script>
 </head>
 
-<body onload="getPics()">
+<body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<header>
 		<div class = "header">
@@ -50,21 +50,68 @@
 	</header>
 
 	<main id="content">
-		<div class = "gallery">
+		<div class="row">
+			<div class="column">
 			<img src="assets/images/Illustration/Teemo_SBCollab.png">
 			<img src="assets/images/Illustration/HS Yone.png">
+			<img src="assets/images/Illustration/ConceptSketches.jpg">
+			<img src="assets/images/Illustration/BdayComm.png">
+
+			
+			</div>
+			<div class="column">
 			<img src="assets/images/Illustration/Rakan_CSP.png">
 			<img src="assets/images/Illustration/Lovev2.png">
 			<img src="assets/images/Illustration/Kosuke.png">
 			<img src="assets/images/Illustration/ayla.png">
+			
+			</div>
+			<div class="column">
+			<img src="assets/images/Illustration/HS Yone.png">
 			<img src="assets/images/Illustration/BarbieMeme.jpg">
-			<img src="assets/images/Illustration/BdayComm.png">
-			<img src="assets/images/Illustration/FinalLevel.png">
+			<img src="assets/images/Illustration/jett.jpg">
+			<img src="assets/images/Illustration/yuumihand.png">
+
+			</div>
+			<div class="column">
 			<img src="assets/images/Illustration/centaur.png">
+			<img src="assets/images/Illustration/Poro_Xayah_Rakan.png">
+			<img src="assets/images/Illustration/pink.jpg">
+			<img src="assets/images/Illustration/FinalLevel.png">
+			
+			</div>
 		</div>
+		<a href = "#Top" id = "btt"><button><img src="assets/images/BacktoTopIcon.png"></button></a>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				document.querySelectorAll('.row img').forEach(img => {
+					img.addEventListener('click', function () {
+						// If the image is already in full size, shrink it back to original
+						if (this.classList.contains('full-size')) {
+							this.classList.remove('full-size');
+							this.style.position = 'static';
+							this.style.width = '100%'; // Reset width to original
+							this.style.height = 'auto'; // Reset height to auto
+						} else {
+							// Make the image full size
+							this.classList.add('full-size');
+							this.style.position = 'fixed';
+							this.style.left = '0';
+							this.style.top = '0';
+							this.style.width = '100vw';
+							this.style.height = '100vh';
+							this.style.objectFit = 'contain';
+							this.style.backgroundColor = 'black';
+							this.style.cursor = 'pointer';
+						}
+					});
+				});
+			});
+			</script>
+			
 	</main>
 
-	<div class = "spaceblock"></div>
+	<div class = "spaceblock2"></div>
 
 	<footer>
 		<hr>

@@ -49,10 +49,47 @@
 	</header>
 
 	<main id="content">
-		<h1 style = "text-align: center;">Coming Soon</h1>
+		<div class="row">
+			<div class="column">
+				<img src="assets/images/Modeling/ModelYone.png">
+				<img src="assets/images/Modeling/ModelAikoijin.png">
+				<img src="assets/images/Modeling/3D Gun.png">
+				</div>
+			<div class="column">
+				<img src="assets/images/Modeling/Yone.gif">
+				<img src="assets/images/Modeling/Aikoijin.gif">
+			</div>
+		</div>
+		<a href = "#Top" id = "btt"><button><img src="assets/images/BacktoTopIcon.png"></button></a>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('.row img').forEach(img => {
+				img.addEventListener('click', function () {
+					// If the image is already in full size, shrink it back to original
+					if (this.classList.contains('full-size')) {
+						this.classList.remove('full-size');
+						this.style.position = 'static';
+						this.style.width = '100%'; // Reset width to original
+						this.style.height = 'auto'; // Reset height to auto
+					} else {
+						// Make the image full size
+						this.classList.add('full-size');
+						this.style.position = 'fixed';
+						this.style.left = '0';
+						this.style.top = '0';
+						this.style.width = '100vw';
+						this.style.height = '100vh';
+						this.style.objectFit = 'contain';
+						this.style.backgroundColor = 'black';
+						this.style.cursor = 'pointer';
+					}
+				});
+			});
+		});
+		</script>
 	</main>
 
-	<div class = "spaceblock"></div>
+	<div class = "spaceblock2"></div>
 
 	<footer>
 		<hr>

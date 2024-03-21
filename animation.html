@@ -49,10 +49,59 @@
 	</header>
 
 	<main id="content">
-		<h1 style = "text-align: center;">Coming Soon</h1>
+		<div class="row">
+			<div class="column">
+			<img src="assets/images/Animation/Boss Animation_1.gif">
+			<img src="assets/images/Animation/Boss Skill1 (Smite).gif">
+			<img src="assets/images/Animation/Final Idle Gif.gif">
+			<img src="assets/images/Animation/ezgif.com-gif-maker (5).gif">
+
+			</div>
+			<div class="column">
+			<img src="assets/images/Animation/BG Animation_1.gif">
+			<img src="assets/images/Animation/Boss Skill2(Aegis).gif">
+			<img src="assets/images/Animation/Final Run Gif.gif">
+			<img src="assets/images/Animation/ezgif.com-gif-maker (6).gif">
+			</div>
+		
+			<div class="column">
+				<img src="assets/images/Animation/Boss Basic Attack.gif">
+				<img src="assets/images/Animation/Boss Skill3(AOE).gif">
+				<img src="assets/images/Animation/Final Fall Gif.gif">
+				<img src="assets/images/Animation/Rotoscoping.gif">
+			</div>
+			<div class="row"></div>
+		</div>
+		<a href = "#Top" id = "btt"><button><img src="assets/images/BacktoTopIcon.png"></button></a>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('.row img').forEach(img => {
+				img.addEventListener('click', function () {
+					// If the image is already in full size, shrink it back to original
+					if (this.classList.contains('full-size')) {
+						this.classList.remove('full-size');
+						this.style.position = 'static';
+						this.style.width = '100%'; // Reset width to original
+						this.style.height = 'auto'; // Reset height to auto
+					} else {
+						// Make the image full size
+						this.classList.add('full-size');
+						this.style.position = 'fixed';
+						this.style.left = '0';
+						this.style.top = '0';
+						this.style.width = '100vw';
+						this.style.height = '100vh';
+						this.style.objectFit = 'contain';
+						this.style.backgroundColor = 'black';
+						this.style.cursor = 'pointer';
+					}
+				});
+			});
+		});
+		</script>
 	</main>
 
-	<div class = "spaceblock"></div>
+	<div class = "spaceblock2"></div>
 
 	<footer>
 		<hr>

@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "font";
-  src: url("../Julietta-Messie.otf") format("opentype")
+  src: url("../RINGM___.TTF") format("truetype")
   }
 
 @font-face {
@@ -46,8 +46,8 @@
 h1 {
   font-family: "font";
   color: #ffcc04;
-  font-weight: 200;
-  letter-spacing: 10px;
+  font-weight: 100;
+  letter-spacing: 5px;
 }
 
 h2 {

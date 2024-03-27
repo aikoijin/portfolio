@@ -1,0 +1,100 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+#content {
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+  padding: 10px;
+  border: solid 3px #ffcc04;
+  height:auto;
+  overflow:auto;
+  background: rgba(0, 0, 0, 0.8)
+}
+
+#text {
+  text-align: center;
+}
+
+#text h1{
+  text-align: center;
+}
+
+.wallpaper {
+  background-image: url(../img/bg.jpg);
+  background-color: slategray;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "font";
+  src: url("../Julietta-Messie.otf") format("opentype")
+  }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../SourceSans3-ExtraLight.otf") format("opentype")
+  }
+
+@font-face {
+  font-family: "Source Sans Bold";
+  src: url("../SourceSans3-Bold.otf") format("opentype")
+  }
+
+h1 {
+  font-family: "font";
+  color: #ffcc04;
+  font-weight: 200;
+  letter-spacing: 10px;
+}
+
+h2 {
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+  color: #00588f;
+  font-family: "Source Sans Bold";
+}
+
+a {
+  color: #153f6d;
+  font-family: "Source Sans Pro";
+  text-decoration: none;
+}
+
+p {
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  text-align:left;
+  color: #e9e8e4;
+  margin:0px;
+}
+
+button{
+  font-family: "font";
+  border:solid 2px #153f6d;
+  border-radius: 5px;
+  background-color:whitesmoke;
+  color:black;
+  padding:5px;
+  margin: 5px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column img{
+  width: 350px;
+}

@@ -4,12 +4,12 @@
 #content {
   margin: auto;
   margin-top: 10px;
-  width: 50%;
+  width: 70%;
   padding: 10px;
-  border: solid 3px #ffcc04;
+  border: solid 3px #153f6d;
   height:auto;
   overflow:auto;
-  background: rgba(0, 0, 0, 0.8)
+  background: rgba(255, 255, 255, 0.8)
 }
 
 #text {
@@ -45,7 +45,7 @@
 
 h1 {
   font-family: "font";
-  color: #ffcc04;
+  color: #28272a;
   font-weight: 100;
   letter-spacing: 5px;
 }
@@ -68,7 +68,7 @@ p {
   font-family: "Source Sans Pro";
   font-size: 15px;
   text-align:left;
-  color: #e9e8e4;
+  color: #28272a;
   margin:0px;
 }
 
@@ -96,5 +96,21 @@ button{
 }
 
 .column img{
-  width: 350px;
+  width: auto;
+  height: 200px;
+  border-radius: 10px;
 }
+
+/* Use a flex container */
+.row2 {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if the container can't fit the items */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+}
+
+.column2 {
+  /* Remove the width and float */
+  margin: 5px; /* Optional: adds some space between the columns */
+}
+
+

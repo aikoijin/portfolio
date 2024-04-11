@@ -82,7 +82,7 @@ button{
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
+  /* Create three equal columns that sits next to each other */
   .column {
     flex: 32%;
     max-width: 32%;
@@ -92,7 +92,7 @@ button{
   .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
+    max-width: 1500px;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
